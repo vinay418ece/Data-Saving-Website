@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+<section class="first">
+  <div class="top">
+    <div class="top1">
+      <img src="./swarm.png" alt="">
+      <h2>NOTE LAND</h2>
+    </div>
+    <div class="sidebar">
+      <!-- <div class="note">
+      </div> -->
+    </div>
+    <button class="editbutton">NEW NOTE</button>
+  </div>
+  <div class="bottom">
+    <div id="image">
+      <img src="./boxpic.png" alt="">
+      <h4>NO NOTES FOUND</h4>
+      <br>
+      <h5>ADD SOME NOTES FROM THE LEFT COLUMN</h5>
+    </div>
+
+    <div id="form" style="display: none">
+      <section class="second">
+        <div class="table">
+            <input class="textarea" type="text" placeholder="NOTE TITLE">
+            <input class="textcontent" type="text" placeholder="NOTE DESCRIPTION">
+        </div>
+        <button class="create">CREATE NOTE</button>
+      </section>
+    <section id="task" class="d-none">
+      <!-- <div class="cc">
+        <strong>NOTE ONE</strong>
+      </div>
+      <div class="ab">
+        <button>NEW TASK</button>
+        <button>DELETE TASK</button> -->
+      </div>
+    </section>
+    <div id="data" style="display: none">
+        <input type="text" name="" id="">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <div id="open">
+  <h2>Add a New Task</h2>
+  <input type="text" placeholder="Type a task">
+</div> -->
+
+  <script src="./main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
+<style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  .top1 img{
+    height: 2rem;
+  }
+  .top1{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    color:white;
+    padding: 1rem 1rem;
+
+  }
+  .top{
+    height: 100vh;
+    width:30%;
+    background-color:#192A56;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+  .first .editbutton{
+    width:30%;
+    margin:1rem;
+    margin-left: 2rem;
+    padding:0.5rem 0.5rem;
+    background-color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    justify-content: center;
+    font-size:0.6rem;
+
+  }
+  .first .bottom{
+    width:70%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin-left:10rem;
+    background-color: darkblue;
+    color: whitesmoke;
+    font-weight:lighter;
+    
+  }
+  .first{
+    display: flex;
+
+  }
+  .second .create{
+    padding:0.5rem 0.5rem;
+    background-color: white;
+    border-radius:12px;
+    outline: none;
+    border: none;
+    margin:0.5rem 0.5rem;
+    width:50%;
+    margin-left:10rem;
+  }
+  .table{
+    display: flex;
+    flex-direction:column;
+    /* justify-content:center; */
+    width:40vw;
+    height:60vh;
+    margin:2rem;
+    gap:2rem;
+    background-color:white;
+    border-radius: 12px;
+    padding: 2rem 2rem;
+  }
+  .table .textarea{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+  }
+  .table .textcontent{
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    border: none;
+
+    
+  }
+  .editbutton{
+    background-color: white;
+    /* margin-left: 2rem; */
+    border-radius:12px;
+    border: none;
+    outline: none;
+    padding:0.5rem 0.5rem;
+    font-weight: bold;
+    width: 20%;
+  }
+  .second{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .first .sidebar .note{
+    background-color: white;
+    border-radius:12px;
+    margin: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  #task{
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  #task .cc{
+    margin: 0;
+  }
+  #task .ab{
+    display: flex;
+    gap: 10px;
+  }
+  /* .sidebar.hidden{
+    display: none;
+  } */
+  
+</style>
